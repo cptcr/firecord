@@ -1,9 +1,8 @@
-// /exec/setup.js
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
 const chalk = require('chalk');
-const ping = require('ping'); // To check ping
+const ping = require('ping'); 
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -35,7 +34,6 @@ DB_URI=${dbUri}
         console.log(chalk.yellow('.env file already exists.'));
     }
 
-    // Create database.js file
     const dbImportPath = `./exec/database/${dbType}.js`;
     const dbFilePath = path.resolve(__dirname, '../database.js');
     const dbFileContent = `

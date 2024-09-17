@@ -8,6 +8,8 @@ require('dotenv').config();
 const ping = require("ping");
 const os = require("os");
 
+const ls = require("./scripts/loadCommands");
+
 
 const client = new Client({
     intents: [
@@ -148,6 +150,9 @@ client.on('messageCreate', (message) => {
         message.channel.send('Pong!');
     }
 });
+
+
+ls.loadCommands(client);
 
 initialize().then(() => {
     client.login(process.env.TOKEN)
