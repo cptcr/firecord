@@ -8,7 +8,8 @@ Developed by CPTCR and ChatGPT (guys im lazy as shi)
    ```
 3. Run the script
    ```bash
-   node .```
+   node .
+   ```
    Write that in the command line, trust me 100% fr fr
 5. After running the script the first time, you will run through the setup
 
