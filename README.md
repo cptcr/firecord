@@ -3,15 +3,19 @@ Developed by CPTCR and ChatGPT (guys im lazy as shi)
 
 # Installation
 1. Clone the repository
-2. ```bash
+   ```bash
    git clone https://github.com/cptcr/firecord.git
+   ```
+2. Insall dependencies
+   ```bash
+   npm i
    ```
 3. Run the script
    ```bash
    node .
    ```
    Write that in the command line, trust me 100% fr fr
-5. After running the script the first time, you will run through the setup
+4. After running the script the first time, you will run through the setup
 
 # Pre installed stuff you need
 
