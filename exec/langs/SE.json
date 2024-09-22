@@ -1,0 +1,11 @@
+{
+    "token": "Vad är din Discord bot-token? ",
+    "botId": "Vad är ditt Discord bot-ID? ",
+    "devIds": "Ange utvecklare-IDs avgränsade med kommatecken: ",
+    "dbType": "Vilken databas skulle du vilja använda? (mongodb/mysql/postgresql/sqlite)",
+    "dbUri": "Vad är din databasanslutningssträng? ",
+    "envCreatedSuccess": ".env fil skapad..",
+    "envExistsAlready": ".env filen finns redan.",
+    "dbFileCreatedSuccess": "Database.js fil skapad, länkad till",
+    "errorCheckPing": "Fel vid kontroll av ping:"
+}

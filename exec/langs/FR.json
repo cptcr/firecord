@@ -1,0 +1,11 @@
+{
+    "token": "Quel est le token de votre bot Discord ?",
+    "botId": "Quel est l'ID de votre bot Discord ?",
+    "devIds": "Entrez les IDs des développeurs, séparés par des virgules : ",
+    "dbType": "Quel type de base de données souhaitez-vous utiliser ? (mongodb/mysql/postgresql/sqlite)",
+    "dbUri": "Quelle est votre chaîne de connexion à la base de données ? ",
+    "envCreatedSuccess": "Fichier .env créé.",
+    "envExistsAlready": "Le fichier .env existe déjà.",
+    "dbFileCreatedSuccess": "Fichier Database.js créé, lié à",
+    "errorCheckPing": "Erreur lors de la vérification du ping :"
+}
