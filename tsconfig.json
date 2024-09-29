@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",                          // Modern JavaScript support
+      "module": "ESNext",                          // Use ESNExt module system for Node.js
+      "lib": ["ES2020", "DOM"],                    // ES2020 features and DOM APIs
+      "outDir": "./dist",                          // Output directory for compiled files
+      "rootDir": ".",                              // The root directory of input files (project root)
+      "strict": true,                              // Enable all strict type checking options
+      "esModuleInterop": true,                     // Interop with ES modules
+      "skipLibCheck": true,                        // Skip checking `.d.ts` files
+      "resolveJsonModule": true,                   // Enable importing JSON files
+      "moduleResolution": "node",                  // Module resolution strategy for Node.js
+      "allowSyntheticDefaultImports": true,        // Allow default imports from modules with no default export
+      "forceConsistentCasingInFileNames": true,    // Enforce consistent casing in file names
+      "baseUrl": ".",                              // Base URL for module resolution
+      "paths": {                                   // Path aliases (if needed)
+        "@commands/*": ["src/commands/*"],
+        "@api/*": ["api/*"],
+        "@website/*": ["website/*"]
+      }
+    },
+    "include": [
+      "src/**/*.ts",                               // Include all .ts files in the src folder
+      "api/**/*.ts",                               // Include all .ts files in the api folder
+      "website/**/*.ts",                           // Include all .ts files in the website folder
+      "scripts/**/*.ts"                            // Include all .ts files in the scripts folder
+    ],
+    "exclude": ["node_modules", "dist"]            // Exclude these directories from compilation
+  }
+  

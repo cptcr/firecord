@@ -1,0 +1,68 @@
+{
+  "name": "firecord",
+  "version": "1.0.0",
+  "description": "FireCord is a discord.js based client handler that is very lightweight but brings a lot of customizations with it.",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "npm run setup && concurrently \"node dist/index.js\" \"node dist/api/index.js\"",
+    "setup": "node dist/src/scripts/setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cptcr/firecord.git"
+  },
+  "keywords": [
+    "firecord",
+    "discord.js",
+    "discord",
+    "bot",
+    "api",
+    "https",
+    "http",
+    "nodejs",
+    "node",
+    "typescript",
+    "ts",
+    "javascript",
+    "js",
+    "cptcr",
+    "discord-api",
+    "database",
+    "sql",
+    "mongodb",
+    "mysql",
+    "redis",
+    "mongoose",
+    "quick.db"
+  ],
+  "author": "cptcr, chatgpt",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/cptcr/firecord/issues"
+  },
+  "homepage": "https://github.com/cptcr/firecord#readme",
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^4.17.13",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.11.9",
+    "@types/ping": "^0.4.4",
+    "@types/readline-sync": "^1.4.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "concurrently": "^7.5.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "inquirer": "^9.1.0",
+    "mongoose": "^8.7.0",
+    "readline-sync": "^1.4.10"
+  }
+}
