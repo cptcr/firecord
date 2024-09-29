@@ -1,12 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
+    <meta charset="UTF-8">
+    <title>CPTCR Hosting - Reliable and Secure Hosting Services</title>
+    <meta name="description" content="CPTCR Hosting offers reliable VPS, Minecraft, and Discord Bot hosting services with top-notch features and global data centers.">
+    <meta name="keywords" content="CPTCR Hosting, VPS Hosting, Minecraft Hosting, Discord Bot Hosting, DDoS Protection, NVMe SSDs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="../tools/styles/styles.css">
 </head>
 <body>
-  <h1><%= title %></h1>
-  <p>Hello World</p>
+
+<header>
+    <div class="header-container">
+        <div class="logo"><a href="https://cptcr.cc/" style="text-decoration: none; user-select: none;" aria-readonly="true">CPTCR Hosting</a></div>
+        <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+        <nav id="navbar">
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#features">Features</a>
+            <a href="https://cptcr.shop" target="_blank">Shop</a>
+            <a href="https://cptcr.cc/partners">Partners</a>
+            <div class="dropdown">
+                <div class="dropbtn" onclick="toggleDropdown()">More <i class="fas fa-caret-down"></i></div>
+                <div class="dropdown-content">
+                    <a href="https://panel.cptcr.cc" target="_blank">Panel</a>
+                    <a href="https://status.cptcr.cc" target="_blank">Status</a>
+                    <a href="/tos">Terms</a>
+                    <a href="/privacy">Privacy</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Reliable and Secure Hosting Solutions</h2>
+        <p>Experience top-notch hosting services with CPTCR Hosting.</p>
+        <a href="https://cptcr.shop" class="button" target="_blank">Get Started</a>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <!-- VPS Hosting -->
+        <div class="service">
+            <i class="fas fa-server"></i>
+            <h3>VPS Hosting</h3>
+            <p>Our Virtual Private Servers offer unparalleled flexibility and control. With root access and a choice of operating systems including Debian, Ubuntu, and Windows 10, you can customize your server environment to suit your needs. Ideal for hosting websites, applications, or running development environments.</p>
+            <a href="https://cptcr.shop/vps" class="learn-more" target="_blank">Learn More &raquo;</a>
+        </div>
+        <!-- Minecraft Hosting -->
+        <div class="service">
+            <i class="fas fa-cube"></i>
+            <h3>Minecraft Hosting</h3>
+            <p>Host your Minecraft worlds on our high-performance servers. Whether you're running Vanilla, CurseForge, or Paper, our optimized servers ensure low latency and high uptime, providing the best gaming experience for you and your players.</p>
+            <a href="https://cptcr.shop/minecraft" class="learn-more" target="_blank">Learn More &raquo;</a>
+        </div>
+        <!-- Discord Bot Hosting -->
+        <div class="service">
+            <i class="fab fa-discord"></i>
+            <h3>Discord Bot Hosting</h3>
+            <p>Deploy your Discord bots effortlessly with our specialized hosting solutions. Supporting popular programming languages like JavaScript and Python, we provide a reliable platform with 24/7 uptime to keep your bots running smoothly.</p>
+            <a href="https://cptcr.shop/discord-bot" class="learn-more" target="_blank">Learn More &raquo;</a>
+        </div>
+        <!-- Database Hosting -->
+         <div class="service">
+            <i class="fa-solid fa-database"></i>
+            <h3>Database Hosting</h3>
+            <p>Manage your data seamlessly with our high-performance database solutions. Whether you're using MySQL, PostgreSQL, or MongoDB, our optimized servers guarantee low latency, high availability, and robust security, ensuring the best performance for your applications and data-driven projects.</p>
+            <a href="https://cptcr.shop/database" class="learn-more" target="_blank">Learn More &raquo;</a>
+         </div>
+        <!-- Free Servers -->
+        <div class="service">
+            <i class="fa-solid fa-coins"></i>
+            <h3>Free Servers</h3>
+            <p>You think we are too expensive or you want to try out a server? We also have free servers there! No, this isnt a trial. The server will stay forever.</p>
+            <a href="https://cptcr.shop/free" class="learn-more" target="_blank">Learn More &raquo;</a>
+        </div>
+        <!-- Subdomains -->
+        <div class="service">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3>Subdomains</h3>
+            <p>Subdomains are now available. Every subdomain is free and you can add unlimited subdomains so you dont have to remember your servers IP adress.</p>
+            <a href="https://cptcr.shop/announcements/3" class="learn-more" target="_blank">Learn More &raquo;</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="features">
+    <h2>Why Choose Us</h2>
+    <div class="features">
+        <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Anti DDoS Protection</h3>
+            <p>We safeguard your services against DDoS attacks with advanced mitigation strategies, ensuring uninterrupted uptime and peace of mind.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-globe"></i>
+            <h3>Global Data Centers</h3>
+            <p>Choose from multiple data centers worldwide for optimal latency and performance, bringing your services closer to your audience.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-microchip"></i>
+            <h3>High-End CPUs</h3>
+            <p>Experience powerful performance with our top-tier processors, capable of handling demanding workloads and applications.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-hdd"></i>
+            <h3>Fast NVMe SSDs</h3>
+            <p>Enjoy lightning-fast storage speeds with our NVMe SSDs, providing quick data access and reducing load times significantly.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-bolt"></i>
+            <h3>Dual 10Gbps Speeds</h3>
+            <p>Benefit from ultra-fast internet connectivity with up to dual 10Gbps speeds, ensuring seamless data transfer and minimal latency.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-lock"></i>
+            <h3>Secure Data Management</h3>
+            <p>Your data is protected with our advanced security protocols, regular backups, and strict privacy policies.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-wrapper">
+        <div class="testimonials" onmouseover="pauseScroll()" onmouseout="resumeScroll()">
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <div class="testimonial">
+                <p>"CPTCR-Hosting is a newer German hosting provider that offers high-quality servers at an affordable price, whether it's dedicated servers for Discord bots, Minecraft servers, or KVM root servers. CPTCR has the right model for everyone."</p>
+                <h4>-  u.meloncrafter, Ultra RP</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <div class="testimonial">
+                <p>"CPTCR-Hosting is a newer German hosting provider that offers high-quality servers at an affordable price, whether it's dedicated servers for Discord bots, Minecraft servers, or KVM root servers. CPTCR has the right model for everyone."</p>
+                <h4>-  u.meloncrafter, Ultra RP</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <div class="testimonial">
+                <p>"CPTCR-Hosting is a newer German hosting provider that offers high-quality servers at an affordable price, whether it's dedicated servers for Discord bots, Minecraft servers, or KVM root servers. CPTCR has the right model for everyone."</p>
+                <h4>-  u.meloncrafter, Ultra RP</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <div class="testimonial">
+                <p>"CPTCR-Hosting is a newer German hosting provider that offers high-quality servers at an affordable price, whether it's dedicated servers for Discord bots, Minecraft servers, or KVM root servers. CPTCR has the right model for everyone."</p>
+                <h4>-  u.meloncrafter, Ultra RP</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <div class="testimonial">
+                <p>"CPTCR-Hosting is a newer German hosting provider that offers high-quality servers at an affordable price, whether it's dedicated servers for Discord bots, Minecraft servers, or KVM root servers. CPTCR has the right model for everyone."</p>
+                <h4>-  u.meloncrafter, Ultra RP</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <div class="testimonial">
+                <p>"CPTCR-Hosting is a newer German hosting provider that offers high-quality servers at an affordable price, whether it's dedicated servers for Discord bots, Minecraft servers, or KVM root servers. CPTCR has the right model for everyone."</p>
+                <h4>-  u.meloncrafter, Ultra RP</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <div class="testimonial">
+                <p>"CPTCR-Hosting is a newer German hosting provider that offers high-quality servers at an affordable price, whether it's dedicated servers for Discord bots, Minecraft servers, or KVM root servers. CPTCR has the right model for everyone."</p>
+                <h4>-  u.meloncrafter, Ultra RP</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <div class="testimonial">
+                <p>"CPTCR-Hosting is a newer German hosting provider that offers high-quality servers at an affordable price, whether it's dedicated servers for Discord bots, Minecraft servers, or KVM root servers. CPTCR has the right model for everyone."</p>
+                <h4>-  u.meloncrafter, Ultra RP</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <!-- Duplicate testimonials for seamless looping -->
+            <div class="testimonial">
+                <p>"Owner is a 10/10"</p>
+                <h4>- k.sphere.x, Label White</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Cheap, good uptime and friendly staff"</p>
+                <h4>- altifyx, Developer of Formify</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I know many hosting companies, but CPTCR Hosting is one of the first companies that offers a good price-performance ratio and also has a good uptime. You also get fast and good support from CPTCR Hosting. Even if there is a downtime, the team quickly takes care of the issue. I can only recommend the hosting.
+
+Support: 5/5 ⭐<br>
+Uptime: 5/5 ⭐<br>
+Price-Performance: 5/5 ⭐"</p>
+                <h4>- verox.js, Client</h4>
+            </div>
+            <div class="testimonial">
+                <p>"CPTCR-Hosting is a newer German hosting provider that offers high-quality servers at an affordable price, whether it's dedicated servers for Discord bots, Minecraft servers, or KVM root servers. CPTCR has the right model for everyone."</p>
+                <h4>-  u.meloncrafter, Ultra RP</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 CPTCR Hosting. All rights reserved.</p>
+    <p>
+        <a href="/cdn-cgi/l/email-protection#c3b0b6b3b3acb1b783a0b3b7a0b1eda0a0">Support</a> |
+        <a href="/cdn-cgi/l/email-protection#1d7c6d6d71747e7c697472736e5d7e6d697e6f337e7e">Applications</a> |
+        <a href="/cdn-cgi/l/email-protection#d6bbb7b8b7b1b3bbb3b8a296b5a6a2b5a4f8b5b5">Dev Team</a> |
+        <a href="/cdn-cgi/l/email-protection#a3c0d3d7c0d1e3c0d3d7c0d18dc0c0">Developer</a>
+    </p>
+    <p>
+        <a href="https://status.cptcr.cc" target="_blank">Status</a> |
+        <a href="https://panel.cptcr.cc" target="_blank">Panel</a> |
+        <a href="https://cptcr.shop" target="_blank">Shop</a>
+    </p>
+</footer>
+
+<!-- Link to External JavaScript -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../tools/javascript/script.js"></script>
+
 </body>
 </html>
