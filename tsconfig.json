@@ -24,7 +24,7 @@
       "api/**/*.ts",                               // Include all .ts files in the api folder
       "website/**/*.ts",                           // Include all .ts files in the website folder
       "scripts/**/*.ts"                            // Include all .ts files in the scripts folder
-    ],
+, "src/scripts/start.js"    ],
     "exclude": ["node_modules", "dist"]            // Exclude these directories from compilation
   }
   

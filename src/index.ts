@@ -1,8 +1,10 @@
-import { Client, Collection, GatewayIntentBits } from 'discord.js';
-import * as dotenv from 'dotenv';
+import { Client, GatewayIntentBits, Collection } from 'discord.js';
 import { loadCommands } from './handlers/commandHandler';
 import { loadEvents } from './handlers/eventHandler';
 import { loadComponents } from './handlers/componentHandler';
+import { validateIntents } from './utils/intents';
+import { scanAndInstallMissingDependencies } from './utils/dependencyScanner';
+import * as dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -28,16 +30,12 @@ class ExtendedClient extends Client {
 
 export default ExtendedClient;
 
-const client = new Client({
-    intents: [
-      GatewayIntentBits.Guilds,
-      GatewayIntentBits.GuildMessages,
-      GatewayIntentBits.MessageContent,
-    ]
-});
+const client = new ExtendedClient();
 
+await scanAndInstallMissingDependencies();
 loadCommands(client);
 loadEvents(client);
 loadComponents(client);
+validateIntents(client.options.intents);
 
 client.login(process.env.DISCORD_BOT_TOKEN).catch(console.error);

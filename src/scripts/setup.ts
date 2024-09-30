@@ -17,6 +17,50 @@ function appendEnvVariable(key: string, value: string) {
   }
 }
 
+async function addDeveloperUser() {
+  const { default: inquirer } = await import('inquirer');
+  const arr: any = [];
+
+  const userDetails = await inquirer.prompt([
+    {
+      type: "input",
+      name: "userID",
+      message: "Enter a Discord User ID to add someone as Developer. Type 'stop' to stop the process. Paste the ID here:",
+      validate: (input: string) => input ? true : "This cannot be empty."
+    }
+  ]);
+
+  if (userDetails === 'stop') {
+    appendEnvVariable("DEVELOPER_ID", `${arr}`);
+    console.log("Added the IDs successfully!");
+  } else {
+    arr.push(userDetails.userID);
+    addDeveloperUser()
+  }
+}
+
+async function addDeveloperGuild() {
+  const { default: inquirer } = await import('inquirer');
+  const arr: any = [];
+
+  const userDetails = await inquirer.prompt([
+    {
+      type: "input",
+      name: "userID",
+      message: "Enter a Discord Guild ID to add a Discord Guild to the Developer whitelist. Type 'stop' to stop the process. Paste the ID here:",
+      validate: (input: string) => input ? true : "This cannot be empty."
+    }
+  ]);
+
+  if (userDetails === 'stop') {
+    appendEnvVariable("DEVELOPER_GUILDS", `${arr}`);
+    console.log("Added the IDs successfully!");
+  } else {
+    arr.push(userDetails.userID);
+    addDeveloperUser()
+  }
+}
+
 // Main setup function
 export async function setup() {
   console.log("\n--- Initial Setup ---");
@@ -46,6 +90,25 @@ export async function setup() {
   ]);
   appendEnvVariable("DISCORD_BOT_ID", botDetails.botId);
   appendEnvVariable("DISCORD_BOT_TOKEN", botDetails.token);
+
+  await addDeveloperGuild();
+  await addDeveloperUser();
+
+  const { autoRestart } = await inquirer.prompt([
+    {
+      type: 'confirm',
+      name: 'autoRestart',
+      message: 'Do you want to enable auto-restart on file changes?',
+      default: true
+    }
+  ]);
+  
+  if (autoRestart) {
+    appendEnvVariable("AUTO_RESTART", "true");
+  } else {
+    appendEnvVariable("AUTO_RESTART", "false");
+  }
+  
 
   // Ask for database type and configuration
   const { dbType } = await inquirer.prompt([
